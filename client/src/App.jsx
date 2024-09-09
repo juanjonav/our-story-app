@@ -5,7 +5,8 @@ function App() {
 
   return (
     <>
-      APP
+      <h1>wa.me</h1>
+      <img src="https://unavatar.io/juanjonavx" alt="" />
     </>
   )
 }
