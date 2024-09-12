@@ -1,12 +1,17 @@
-import { useState } from 'react'
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Principal from './pages/principal'
+import Header from './components/Header'
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <h1>wa.me</h1>
-      <img src="https://unavatar.io/juanjonavx" alt="" />
+      <Router>
+        <Header/>
+        <Routes>
+          <Route path='/' element={<Principal/>}></Route>
+          
+        </Routes>
+
+      </Router>
     </>
   )
 }
