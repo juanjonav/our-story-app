@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Menu } from "lucide-react"
-import './Header.css'
+
 import logo from '../assets/img/heart.png'
 
 
