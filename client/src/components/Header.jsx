@@ -17,7 +17,7 @@ export default function StickyNavbar() {
             <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
                 <a href="/" className="text-2xl font-bold text-white">
-                <img src={logo} alt="Home" /> Home
+                <img src={logo} alt="Home" className="h-16" /> Home
                 </a>
             </div>
             <div className="hidden md:block">
