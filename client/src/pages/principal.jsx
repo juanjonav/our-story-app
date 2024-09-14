@@ -55,18 +55,11 @@ export default function Post() {
 
   return (
     <div className="text-gray-100">
-      {/*
-      <header className="hacerpost sticky top-0 z-10 backdrop-blur-md bg-gray-900/80 border-b border-gray-800">
-        <div className="container mx-auto px-4 py-3 flex items-center">
-          <Twitter className="h-8 w-8 text-blue-400" />
-          <h1 className="ml-4 text-xl font-bold">Home</h1>
-        </div>
-      </header>
-      */}
-      <main className="container mx-auto px-4 py-8">
-        <div className="max-w-2xl mx-auto space-y-4">
+      
+      <main className="container mx-auto px-4 py-8 ">
+        <div className="max-w-2xl mx-auto space-y-10 rounded">
           {posts.map((post) => (
-            <div key={post.id} className="bg-zinc-900 hover:bg-gray-750 transition-colors border-gray-700">
+            <div key={post.id} className="bg-zinc-800 hover:bg-gray-750 transition-colors border-gray-700">
               <div className="flex flex-row items-center space-x-4 pb-2">
                 
                 <img src={`${avatarurl}${post.user.handle}`} alt="" className="w-16 h-16 rounded-full" />
@@ -77,7 +70,7 @@ export default function Post() {
                 <p className="ml-auto text-sm text-slate-50">{post.timestamp}</p>
               </div>
               <div>
-                <p>{post.content}</p>
+                <p >{post.content}</p>
               </div>
             </div>
           ))}
