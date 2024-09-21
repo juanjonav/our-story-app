@@ -26,17 +26,17 @@ export default function StickyNavbar() {
                 className="text-gray-100 hover:text-gray-400 px-3 py-2 rounded-md text-sm font-medium">
                     Home
                 </a>
-                <a href="/about" 
+                <a href="/yo" 
                 className="text-gray-100 hover:text-gray-400 px-3 py-2 rounded-md text-sm font-medium">
-                    About
+                    yo
                 </a>
-                <a href="/services" 
+                <a href="/tu" 
                 className="text-gray-100 hover:text-gray-400 px-3 py-2 rounded-md text-sm font-medium">
-                    Services
+                    tu
                 </a>
-                <a href="/contact" 
+                <a href="/disclaimer" 
                 className="text-gray-100 hover:text-gray-400 px-3 py-2 rounded-md text-sm font-medium">
-                    Contact
+                    disclaimer
                 </a>
                 </div>
             </div>
@@ -53,14 +53,14 @@ export default function StickyNavbar() {
                 <a href="/" className="text-gray-100 hover:text-gray-400 block px-3 py-2 rounded-md text-base font-medium">
                 Home
                 </a>
-                <a href="/about" className="text-gray-100 hover:text-gray-400 block px-3 py-2 rounded-md text-base font-medium">
-                About
+                <a href="/yo" className="text-gray-100 hover:text-gray-400 block px-3 py-2 rounded-md text-base font-medium">
+                yo
                 </a>
-                <a href="/services" className="text-gray-100 hover:text-gray-400 block px-3 py-2 rounded-md text-base font-medium">
-                Services
+                <a href="/tu" className="text-gray-100 hover:text-gray-400 block px-3 py-2 rounded-md text-base font-medium">
+                tu
                 </a>
-                <a href="/contact" className="text-gray-100 hover:text-gray-400 block px-3 py-2 rounded-md text-base font-medium">
-                Contact
+                <a href="/disclaimer" className="text-gray-100 hover:text-gray-400 block px-3 py-2 rounded-md text-base font-medium">
+                disclaimer
                 </a>
             </div>
             </div>
