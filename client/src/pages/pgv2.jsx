@@ -3,7 +3,7 @@ import axios from 'axios';
 const avatarurl = "https://unavatar.io/"
 
 const url = 'https://apimocha.com/juanjonavx/post'; 
-export default function Post() {
+export default function PostList() {
   
   const [posts, setPosts] = useState([]);
   useEffect(() => {
@@ -17,16 +17,14 @@ export default function Post() {
     };
     fetchPosts();
   }, []);
-  
   return (
     <div className="text-gray-100">
-      
-      <main className="container mx-auto px-4 py-8 ">
-        <div className="max-w-xl mx-auto space-y-10 rounded ">
+      <main className="container mx-auto px-4 py-8">
+        {/* El wrapper usa grid y cambia el número de columnas según el tamaño de pantalla */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {posts.map((post) => (
-            <div key={post.id} className="bg-zinc-800 hover:bg-gray-750 transition-colors border-gray-700 ">
+            <div key={post.id} className="bg-zinc-800 hover:bg-gray-750 transition-colors border-gray-700 rounded-lg p-4">
               <div className="flex flex-row items-center space-x-4 pb-2">
-                
                 <img src={`${avatarurl}${post.user.handle}`} alt="" className="w-16 h-16 rounded-full" />
                 <div>
                   <p className="font-semibold">{post.user.name}</p>
@@ -37,14 +35,14 @@ export default function Post() {
               <div className="post-content">
                 <h2 className="text-xl font-bold">{post.content_title}</h2>
                 <p className="text-gray-300">{post.content}</p>
-                <img src={post.content_img} alt="" className="w-1200 h-1200" />
+                <img src={post.content_img} alt="" className="w-full h-auto" />
               </div>
             </div>
           ))}
         </div>
       </main>
-      
     </div>
   );
+  
 };
 
